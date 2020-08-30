@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1589433973 source:d:\c++ algo project\c++ algo project\main.cpp
+	<iostream>
+	<stdlib.h>
+	<windows.h>
+	<ctime>
+
+1588785425 d:\c++ algo project\c++ algo project\timercpp.h
+	<iostream>
+	<thread>
+	<chrono>
+

@@ -1,0 +1,23 @@
+The Solution to single runway problem:
+---------------------------------------------------
+1.	Assign a start time (s)
+2.	The assumption is the first plane will land at that the start time (s) and it takes a second for landing.
+The situation can be relatively changed when being in applied in a real life scenario.
+3.	Each plane will have a landing window gap and a minimum collision prevention gap which can be modified.
+Earliest Landing Time (Ei ) . This will be provided to each plane depending upon starting time and the assumption is that no plane can reach before this time. After the first plane lands the earliest landing time for other planes will be given while takin in the consideration the minimum collision gap.
+
+Latest Landing Time( Li). This Time will depend on Ei and cetail value will be assigned depending on the landing window gap
+
+Collision Prevention Gap: C
+
+4.	An Optimal time for each plane to be landed is the mid time between Ei and Li This time is given by O(t).
+5.	The cost associated with a plane landing before Ti, is given by gi and the cost associated with the plane landing after O(t) is given by hi .
+6.	Obviously in real life scenerios chances are that the plane will not land at the optimal time O(t). The time at which it will be landing is the STi = the scheduled landing time. 
+This time will be taken as input for each plane and depending upon this input new landing   windows , minimum collision gaps and Optimal time for next planes will be created.
+    
+7.	There are also chances that a plane might miss it’s landing window. The plane will then be provided a new scheduled time inbetween the the landing window gaps of next flights. 
+
+8.	If a plane lands before/after its target time and and no previous planes are in the air then nothing changes and the minimum collision gap is still matained.
+
+9.	If a plane lands before/after its target time and some previous plane is in the air then it will be landed and it will be made sure due to this landing the minimum collision gap is still mantained as for example the plane which was in the air is landed just at  latest time (Li) of the previously landed plane than the minimum landing window gap and the Earliest Landing time (Ei) of the next plane is also affected and that must not happen. 
+
